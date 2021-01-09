@@ -1,6 +1,19 @@
 ﻿using System;
 
- //Второй урок.Канкулятор
+//#3
+namespace App1
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+
+        }
+    }
+}
+
+//Второй урок.Канкулятор
+/*
 namespace App1
 {
     class MainClass
@@ -20,6 +33,8 @@ namespace App1
         }
     }
 }
+*/
+
 // Первый запуск
 /*
 Первый тест программы. Выводит камандную строку, и закрывает после нажатия кнопки.
