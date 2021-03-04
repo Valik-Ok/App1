@@ -24,6 +24,14 @@ namespace App1
                 i++;
             }
             */
+
+            // Цикл do while будет повторять действие до того как введём 5 
+            
+            int number;
+            do {
+                Console.WriteLine("Введите число: ");
+                number = Convert.ToInt32(Console.ReadLine ());
+            } while (number != 5);
             
             Console.ReadKey();
         }
