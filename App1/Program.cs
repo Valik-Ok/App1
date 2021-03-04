@@ -10,10 +10,21 @@ namespace App1
         {
 
             // Цикл for предназначен делать аперацию несколько раз.
+            /*
             for (int i = 0; i <= 5; i++) {
                 Console.WriteLine(i + "\n");
             }
+            */
 
+            // Цикл While 
+            /*
+            int i = 0;
+            while (i <=5) {
+                Console.WriteLine(i);
+                i++;
+            }
+            */
+            
             Console.ReadKey();
         }
     }
