@@ -10,14 +10,24 @@ namespace App1
         {
             Random randNum = new Random();
 
-            double num;
+            int num;
             Console.WriteLine("Сколько тебе лет ?");
             num = randNum.Next(1, 6);
 
             switch (num)
             {
+                case 1: // Если равно 1 
+                    Console.WriteLine("Num is - " + num);
+                    break;
+                case 2: // Если равно 2
+                    Console.WriteLine("Num is +" + num);
+                    break;
+                default: // Если не равно не чему 
+                    Console.WriteLine("Ничего " + num);
+                    break;
+            }
 
-            } 
+            Console.ReadKey();
         }
     }
 }
