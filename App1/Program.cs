@@ -2,6 +2,25 @@
 
 //#4
 
+namespace App1
+{
+    class Mainclass
+    {
+        public static void Main (string[] agrs)
+        {
+            Random randNum = new Random();
+
+            double num;
+            Console.WriteLine("Сколько тебе лет ?");
+            num = randNum.Next(1, 6);
+
+            switch (num)
+            {
+
+            } 
+        }
+    }
+}
 
 
 //#3 Проверка < или > 
