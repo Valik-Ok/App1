@@ -1,6 +1,6 @@
 ﻿using System;
 
-//#6 Масивы 
+//#6 Масивы ( Масив может содержать несколько значений ) 
 
 namespace App1
 {
@@ -8,7 +8,17 @@ namespace App1
     {
         public static void Main(string[] agrs)
         {
+            int[] arrey = new int[5];  //Масив цифр
+            arrey[0] = 11;
+            arrey[1] = 22;
+            arrey[2] = 33;
+            arrey[3] = 44;
+            arrey[4] = 55;
 
+            for (int i = 0; i < arrey.Length; i++)
+                Console.WriteLine(arrey[i] + ", ");
+
+            Console.ReadKey();
         }
     }
 }
