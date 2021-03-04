@@ -1,6 +1,11 @@
 ﻿using System;
 
+//#4
+
+
+
 //#3 Проверка < или > 
+/*
 namespace App1
 {
     class MainClass
@@ -27,6 +32,7 @@ namespace App1
         }
     }
 }
+*/
 
 //#2 Второй урок.Канкулятор
 /*
