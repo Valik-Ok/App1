@@ -1,7 +1,21 @@
 ﻿using System;
 
-//#5 Циклы 
+//#6 Масивы 
 
+namespace App1
+{
+    class Mainclass
+    {
+        public static void Main(string[] agrs)
+        {
+
+        }
+    }
+}
+
+
+//#5 Циклы 
+/*
 namespace App1
 {
     class Mainclass
@@ -10,35 +24,36 @@ namespace App1
         {
 
             // Цикл for предназначен делать аперацию несколько раз.
-            /*
-            for (int i = 0; i <= 5; i++) {
-                Console.WriteLine(i + "\n");
-            }
-            */
+
+//            for (int i = 0; i <= 5; i++) {
+//                Console.WriteLine(i + "\n");
+//            }
+
 
             // Цикл While 
-            /*
-            int i = 0;
-            while (i <=5) {
-                Console.WriteLine(i);
-                i++;
-            }
-            */
+
+//            int i = 0;
+//            while (i <=5) {
+//                Console.WriteLine(i);
+//                i++;
+//            }
+
 
             // Цикл do while будет повторять действие до того как введём 5 
-            
-            int number;
-            do {
-                Console.WriteLine("Введите число: ");
-                number = Convert.ToInt32(Console.ReadLine ());
-            } while (number != 5);
-            
+
+//            int number;
+//            do {
+//                Console.WriteLine("Введите число: ");
+//                number = Convert.ToInt32(Console.ReadLine ());
+//            } while (number != 5);
+
+
             Console.ReadKey();
+            
         }
     }
 }
-
-
+*/
 
 
 //#4 Рандом цифр 
