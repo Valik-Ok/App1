@@ -9,6 +9,10 @@ namespace App1
         public static void Main (string[] agrs)
         {
 
+            // Цикл for предназначен делать аперацию несколько раз.
+            for (int i = 0; i <= 5; i++) {
+                Console.WriteLine(i + "\n");
+            }
 
             Console.ReadKey();
         }
