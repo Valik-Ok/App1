@@ -1,7 +1,7 @@
 ﻿using System;
 
-//#4
-
+//#4 Рандом цифр 
+/*
 namespace App1
 {
     class Mainclass
@@ -11,7 +11,7 @@ namespace App1
             Random randNum = new Random();
 
             int num;
-            Console.WriteLine("Сколько тебе лет ?");
+      
             num = randNum.Next(1, 6);
 
             switch (num)
@@ -31,7 +31,7 @@ namespace App1
         }
     }
 }
-
+*/
 
 //#3 Проверка < или > 
 /*
