@@ -1,5 +1,23 @@
 ﻿using System;
 
+//#5 Циклы 
+
+namespace App1
+{
+    class Mainclass
+    {
+        public static void Main (string[] agrs)
+        {
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
 //#4 Рандом цифр 
 /*
 namespace App1
