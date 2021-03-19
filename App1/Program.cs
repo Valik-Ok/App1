@@ -1,7 +1,31 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
+//#7 Методы  и функции 
+namespace ProjegtOne
+{
+    class MainClass
+    {
+        public static void Main (string [] args)
+        {
+            WriteHello ("Hi");
+            int num_1 = Convert.ToInt32(Console.ReadLine());
+            int num_2 = Convert.ToInt32(Console.ReadLine());
+            int result = Multiply(num_1, num_2);
+            Console.WriteLine("Result is - " + result);
 
+            Console.ReadKey(); 
+        }
+        public static void WriteHello (string str)
+        {
+            Console.WriteLine(str);
+        }
+        public static int Multiply ( int num_1, int num_2)
+        {
+            return num_1 * num_2; 
+        }
+    }
+}
 
 
 //#6 Масивы ( Масив может содержать несколько значений ) 
