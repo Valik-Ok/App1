@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic; // Масивы: Список
 
 //#6 Масивы ( Масив может содержать несколько значений ) 
 
@@ -8,15 +9,23 @@ namespace App1
     {
         public static void Main(string[] agrs)
         {
-            int[] arrey = new int[5];  //Масив цифр
-            arrey[0] = 11;
-            arrey[1] = 22;
-            arrey[2] = 33;
-            arrey[3] = 44;
-            arrey[4] = 55;
+            
+            
+            // Простые Масивы 
+            // string[] names = new string[3]
+            // {
+            //     "Том", "Джон", "Джорж"
+            // };
 
-            for (int i = 0; i < arrey.Length; i++)
-                Console.WriteLine(arrey[i] + ", ");
+            // int[] arrey = new int[5];  //Масив цифр
+            // arrey[0] = 11;
+            // arrey[1] = 22;
+            // arrey[2] = 33;
+            // arrey[3] = 44;
+            // arrey[4] = 55;
+
+            // for (int i = 0; i < names.Length; i++)
+            //   Console.WriteLine(names[i] + ", ");
 
             Console.ReadKey();
         }
@@ -35,27 +44,27 @@ namespace App1
 
             // Цикл for предназначен делать аперацию несколько раз.
 
-//            for (int i = 0; i <= 5; i++) {
-//                Console.WriteLine(i + "\n");
-//            }
+            // for (int i = 0; i <= 5; i++) {
+            //    Console.WriteLine(i + "\n");
+            // }
 
 
             // Цикл While 
 
-//            int i = 0;
-//            while (i <=5) {
-//                Console.WriteLine(i);
-//                i++;
-//            }
+            // int i = 0;
+            // while (i <=5) {
+            //    Console.WriteLine(i);
+            //    i++;
+            // }
 
 
             // Цикл do while будет повторять действие до того как введём 5 
 
-//            int number;
-//            do {
-//                Console.WriteLine("Введите число: ");
-//                number = Convert.ToInt32(Console.ReadLine ());
-//            } while (number != 5);
+            // int number;
+            // do {
+            //    Console.WriteLine("Введите число: ");
+            //    number = Convert.ToInt32(Console.ReadLine ());
+            // } while (number != 5);
 
 
             Console.ReadKey();
@@ -64,7 +73,6 @@ namespace App1
     }
 }
 */
-
 
 //#4 Рандом цифр 
 /*
