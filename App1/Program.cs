@@ -1,26 +1,37 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
-//#6 Масивы ( Масив может содержать несколько значений ) 
 
+
+
+//#6 Масивы ( Масив может содержать несколько значений ) 
+/*
 namespace App1
 {
     class Mainclass
     {
         public static void Main(string[] agrs)
         {
-            //  Много мерные Масивы.
-            int length = 4;
-            int[,] numbers = new int[length, length];
-            
-            for ( int i=0; i < length; i++)
+            // Цикл foreach
+            float[] numbers = { 1.23f, 23.23f, 23.43f };
+
+            foreach (float el in numbers)
             {
-                for ( int j=0; j < length; j++)
-                {
-                    numbers[i, j] = i + j;
-                    Console.Write(numbers[i, j]);
-                }
+                Console.WriteLine(el);
             }
+
+            //  Много мерные Масивы.
+            //int length = 4;
+            //int[,] numbers = new int[length, length];
+            
+            //for ( int i=0; i < length; i++)
+            //{
+            //    for ( int j=0; j < length; j++)
+            //    {
+            //        numbers[i, j] = i + j;
+            //        Console.Write(numbers[i, j] + " ");
+            //    }
+            //}
 
             // Список Масивы ( Забирают много памети )
             // List<int> numbers = new List<int>();
@@ -53,7 +64,7 @@ namespace App1
         }
     }
 }
-
+*/
 
 //#5 Циклы 
 /*
