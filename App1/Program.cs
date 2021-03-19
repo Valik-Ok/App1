@@ -9,8 +9,30 @@ namespace App1
     {
         public static void Main(string[] agrs)
         {
+            //  Много мерные Масивы.
+            int length = 4;
+            int[,] numbers = new int[length, length];
             
-            
+            for ( int i=0; i < length; i++)
+            {
+                for ( int j=0; j < length; j++)
+                {
+                    numbers[i, j] = i + j;
+                    Console.Write(numbers[i, j]);
+                }
+            }
+
+            // Список Масивы ( Забирают много памети )
+            // List<int> numbers = new List<int>();
+
+            // numbers.Add(23);
+            // numbers.Add(56);
+
+            // numbers.RemoveAt(0); // Удаляет элимент. 
+
+            // for (int i = 0; i < numbers.Count; i++)
+            //     Console.Write(numbers[i] + ", ");
+
             // Простые Масивы 
             // string[] names = new string[3]
             // {
