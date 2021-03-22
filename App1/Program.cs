@@ -2,12 +2,32 @@
 using System.Collections.Generic; // Масивы: Список
 
 //#8 Создание классов 
-
 class Animal
 {
-    public string name = "Spoti";
-    public int age = 7;
-    public float hapiness = 0.7f;
+    public static int count = 0;
+
+    public string name;
+    public int age;
+    public float hapiness;
+
+    public Animal ()
+    {
+        name = "Spoti";
+        age = 7;
+        hapiness = 0.7f;
+
+        count++;
+        Print();
+    }
+    public Animal (string _name, int _age, float _hapiness)
+    {
+        name = _name;
+        age = _age;
+        hapiness = _hapiness;
+
+        count++;
+        Print();
+    }
 
     public void Print ()
     {
@@ -21,7 +41,10 @@ class MainClass
     public static void Main(string[] args)
     {
         Animal cat = new Animal();
-        cat.Print();
+        Console.WriteLine();
+        Animal dog = new Animal("Tom", 13, 0.8F);
+
+        Console.WriteLine("Count of animals: " + Animal.count);
 
         Console.ReadKey ();
     }
