@@ -1,57 +1,54 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
-//#8 Создание классов 
-class Animal
+//#8 Создание классов //имя курс если у него стипендия 
+class Student
 {
-    public static int count = 0;
+    public static int cout = 0; // Количевство студентов 
 
-    public string name;
-    public int age;
-    public float hapiness;
-    // bool true 
-
-    public Animal ()
+    public string name; // Имя студента 
+    public int age; // Курс студента 
+    public bool st; // Имеет ли стипендию или нет 
+    
+    public Student ()
     {
-        name = "Spoti";
-        age = 7;
-        hapiness = 0.7f;
+        name = "Олег";
+        age = 1;
+        st = true;
 
-        count++;
+        cout++;
         Print();
     }
-    public Animal (string name, int age, float hapiness)
+    public Student (string name, int age, bool st)
     {
         this.name = name;
         this.age = age;
-        this.hapiness = hapiness;
+        this.st = st;
 
-        count++;
+        cout++;
         Print();
     }
-
     public void Print ()
     {
-        Console.WriteLine("Name: " + name);
-        Console.WriteLine("age: " + age);
-        Console.WriteLine("hapiness: " + hapiness);
+        Console.WriteLine("Имя:" + name);
+        Console.WriteLine("Курс:" + age);
+        Console.WriteLine("Стипендия:" + st);
     }
 }
-class MainClass
+class Mainclass
 {
     public static void Main(string[] args)
     {
-        Animal cat = new Animal();
-        Console.WriteLine();
-        Animal dog = new Animal("Tom", 13, 0.8F);
+        Student s1 = new Student();
+        Student s2 = new Student("Саша",2, false);
+        Student s3 = new Student("Денис", 2, true);
+        Student s4 = new Student("Жора", 3, false);
 
-        Console.WriteLine("Count of animals: " + Animal.count);
+        Console.WriteLine("Количевство Студентов: "+ Student.cout);
 
-        Console.ReadKey ();
+        Console.ReadKey();
     }
 }
-
-
 
 //#7 Методы  и функции 
 /*
