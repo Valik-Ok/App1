@@ -10,19 +10,29 @@ class Student
     public int age; // Курс студента 
     public bool st; // Имеет ли стипендию или нет 
     
+    public int Age
+    {
+        get { return age; }
+        set {
+            if (value < 1) age = 1;
+            else if (value > 5) age = 5;
+            else age = value;
+            }
+    }
+
     public Student ()
     {
         name = "Олег";
-        age = 1;
+        Age = 1;
         st = true;
 
         cout++;
         Print();
     }
-    public Student (string name, int age, bool st)
+    public Student (string name, int Age, bool st)
     {
         this.name = name;
-        this.age = age;
+        this.Age = Age;
         this.st = st;
 
         cout++;
@@ -40,9 +50,13 @@ class Mainclass
     public static void Main(string[] args)
     {
         Student s1 = new Student();
-        Student s2 = new Student("Саша",2, false);
-        Student s3 = new Student("Денис", 2, true);
-        Student s4 = new Student("Жора", 3, false);
+        Console.WriteLine();
+        Student s2 = new Student("Саша", 0, false);
+        Console.WriteLine();
+        Student s3 = new Student("Денис", 3, true);
+        Console.WriteLine();
+        Student s4 = new Student("Жора", 6, false);
+        Console.WriteLine();
 
         Console.WriteLine("Количевство Студентов: "+ Student.cout);
 
