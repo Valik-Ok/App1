@@ -1,7 +1,18 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
-//#8 Создание классов //имя курс если у него стипендия 
+//#9 Наследование 
+
+namespace ProjectOne
+{
+    class Animal
+    {
+
+    }
+}
+
+//#8 Создание классов 
+/*
 class Student
 {
     public static int cout = 0; // Количевство студентов 
@@ -63,6 +74,7 @@ class Mainclass
         Console.ReadKey();
     }
 }
+*/
 
 //#7 Методы  и функции 
 /*
