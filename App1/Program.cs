@@ -1,7 +1,36 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
+//#8 Создание классов 
+
+class Animal
+{
+    public string name = "Spoti";
+    public int age = 7;
+    public float hapiness = 0.7f;
+
+    public void Print ()
+    {
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("age: " + age);
+        Console.WriteLine("hapiness: " + hapiness);
+    }
+}
+class MainClass
+{
+    public static void Main(string[] args)
+    {
+        Animal cat = new Animal();
+        cat.Print();
+
+        Console.ReadKey ();
+    }
+}
+
+
+
 //#7 Методы  и функции 
+/*
 namespace ProjegtOne
 {
     class MainClass
@@ -26,7 +55,7 @@ namespace ProjegtOne
         }
     }
 }
-
+*/
 
 //#6 Масивы ( Масив может содержать несколько значений ) 
 /*
