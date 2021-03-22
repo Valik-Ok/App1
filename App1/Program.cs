@@ -1,13 +1,38 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
-//#9 Наследование 
+//#9 Наследование Классов
 
 namespace ProjectOne
 {
     class Animal
     {
+        public string Name { get; set;}
 
+        public Animal (string name) { Name = name; }
+        public void Print() { Console.WriteLine(Name); }
+    }
+    class Dog : Animal
+    {
+        private float speed;
+        public Dog (float speed, string name) : base (name)
+        {
+            this.speed = speed;
+            Console.WriteLine ("Speed: "+speed);
+        }
+    }
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Dog tom = new Dog(14.2f, "Tomm");
+            Console.WriteLine(tom.Name);
+
+            Dog jerri = new Dog(22.3f, "Jerri");
+            Console.WriteLine(jerri.Name);
+            Console.WriteLine();
+            jerri.Print();
+        }
     }
 }
 
