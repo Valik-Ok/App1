@@ -7,9 +7,9 @@ namespace ProjectOne
 {
     class Animal
     {
-        public string Name { get; set;}
+        public string Name { get; set; }
 
-        public Animal (string name) { Name = name; }
+        public Animal (string name) { Name = name; Console.WriteLine("Name: " +Name); }
         public void Print() { Console.WriteLine(Name); }
     }
     class Dog : Animal
@@ -19,19 +19,44 @@ namespace ProjectOne
         {
             this.speed = speed;
             Console.WriteLine ("Speed: "+speed);
+            Console.WriteLine();
+        }
+    }
+    class Cat : Animal
+    {
+        private float speed;
+        public Cat(float speed, string name) : base(name)
+        {
+            this.speed = speed;
+            Console.WriteLine("Speed: " + speed);
+            Console.WriteLine();
         }
     }
     class MainClass
     {
         public static void Main(string[] args)
         {
-            Dog tom = new Dog(14.2f, "Tomm");
-            Console.WriteLine(tom.Name);
 
-            Dog jerri = new Dog(22.3f, "Jerri");
-            Console.WriteLine(jerri.Name);
-            Console.WriteLine();
-            jerri.Print();
+            List<Animal> animals = new List<Animal>();
+            animals.Add(new Dog(20.9f, "Alex"));
+            animals.Add(new Dog(35.6f, "Tommi"));
+            animals.Add(new Cat(11.2f, "Jeri"));
+
+            foreach (Animal animal in animals)
+            {
+                if (animal is Animal) Console.WriteLine(animal.Name); Console.WriteLine();
+                if (animal is Cat) (animal as Cat).Print();
+            }
+
+            //Dog tom = new Dog(14.2f, "Tomm");
+            //Console.WriteLine(tom.Name);
+
+            //Dog jerri = new Dog(22.3f, "Jerri");
+            //Console.WriteLine(jerri.Name);
+            //Console.WriteLine();
+            //jerri.Print();
+
+            Console.ReadKey();
         }
     }
 }
