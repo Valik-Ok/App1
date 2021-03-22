@@ -9,6 +9,7 @@ class Animal
     public string name;
     public int age;
     public float hapiness;
+    // bool true 
 
     public Animal ()
     {
@@ -19,11 +20,11 @@ class Animal
         count++;
         Print();
     }
-    public Animal (string _name, int _age, float _hapiness)
+    public Animal (string name, int age, float hapiness)
     {
-        name = _name;
-        age = _age;
-        hapiness = _hapiness;
+        this.name = name;
+        this.age = age;
+        this.hapiness = hapiness;
 
         count++;
         Print();
