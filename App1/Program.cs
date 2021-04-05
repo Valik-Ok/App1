@@ -10,7 +10,7 @@ namespace ProjectOne
         public string Name { get; set; }
 
         public Animal (string name) { Name = name; Console.WriteLine("Name: " +Name); }
-        public void Print() { Console.WriteLine(Name); }
+        public virtual void Print() { Console.WriteLine(Name); } // Виртуальный метод.
     }
     class Dog : Animal
     {
@@ -21,6 +21,12 @@ namespace ProjectOne
             Console.WriteLine ("Speed: "+speed);
             Console.WriteLine();
         }
+
+        public override void Print()
+        {
+            base.Print();
+            Console.WriteLine("Dog Speed: " + speed);
+        }
     }
     class Cat : Animal
     {
@@ -28,8 +34,13 @@ namespace ProjectOne
         public Cat(float speed, string name) : base(name)
         {
             this.speed = speed;
-            Console.WriteLine("Speed: " + speed);
+            Console.WriteLine("Speed: " +speed);
             Console.WriteLine();
+        }
+        public override void Print()
+        {
+            base.Print();
+            Console.WriteLine("Cat Speed: " +speed);
         }
     }
     class MainClass
@@ -44,9 +55,14 @@ namespace ProjectOne
 
             foreach (Animal animal in animals)
             {
-                if (animal is Animal) Console.WriteLine(animal.Name); Console.WriteLine();
-                if (animal is Cat) (animal as Cat).Print();
+                animal.Print ();
             }
+
+            //foreach (Animal animal in animals)
+            //{
+            //    if (animal is Animal) Console.WriteLine(animal.Name); Console.WriteLine();
+            //    if (animal is Cat) (animal as Cat).Print();
+            //}
 
             //Dog tom = new Dog(14.2f, "Tomm");
             //Console.WriteLine(tom.Name);
