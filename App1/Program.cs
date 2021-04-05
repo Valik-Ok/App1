@@ -1,8 +1,20 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
+//#11 Перегрузка методов
+namespace ProjectOne
+{
+    class Mainclass
+    {
+        public static void Main (string[]args)
+        {
+            Console.ReadKey();
+        }
+    }
+}
 
 //#10 Интерфейсы 
+/*
 namespace ProjectOne
 {
     interface ISomeInterface // Интерфесы принето называть в начале I. (Не пишем модификаторы доступа)
@@ -50,6 +62,7 @@ namespace ProjectOne
         }
     } 
 }
+*/
 
 //#9 Наследование Классов. Абстрактный класс. Виртуальный класс.
 /*
