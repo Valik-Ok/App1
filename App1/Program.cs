@@ -10,6 +10,14 @@ namespace ProjectOne
         {
             Console.WriteLine("Result is: " + a * b);
         }
+        public void Multiply(int a, int b, int c)
+        {
+            Console.WriteLine("Result is: " + a * b * c);
+        }
+        public void Multiply(string str)
+        {
+            Console.WriteLine("Result is: " + str);
+        }
     }
     class Mainclass
     {
@@ -18,6 +26,8 @@ namespace ProjectOne
             Some test = new Some();
 
             test.Multiply (2, 33);
+            test.Multiply(2, 33, 2);
+            test.Multiply("Some test");
 
             Console.ReadKey();
         }
