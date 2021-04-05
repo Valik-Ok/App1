@@ -1,8 +1,21 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
-//#9 Наследование Классов
 
+//#10 
+namespace ProjectOne
+{
+    class Mainclass
+    {
+        public static void Main (string[]args)
+        {
+            Console.ReadLine();
+        }
+    } 
+}
+
+//#9 Наследование Классов. Абстрактный класс. Виртуальный класс.
+/*
 namespace ProjectOne
 {
     abstract class Animal // Абстрактный класс
@@ -74,6 +87,7 @@ namespace ProjectOne
         }
     }
 }
+*/
 
 //#8 Создание классов 
 /*
