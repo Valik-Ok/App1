@@ -5,16 +5,22 @@ using System.Collections.Generic; // Масивы: Список
 //#10 Интерфейсы 
 namespace ProjectOne
 {
-    interface ISomeInterface // Интерфесы принето называть в начале ISome. (Не пишем модификаторы доступа)
+    interface ISomeInterface // Интерфесы принето называть в начале I. (Не пишем модификаторы доступа)
     {
         int property { get; set; }
         void Print();
     }
 
-    class Test_1 : ISomeInterface
+    interface IDraw
+    {
+        void Draw();
+    }
+
+    class Test_1 : ISomeInterface, IDraw
     {
         public int property { get; set; }
         public void Print() { Console.WriteLine("Some text"); }
+        public void Draw () { Console.WriteLine("Draw method"); }
     }
     class Test_2 : ISomeInterface
     {
@@ -31,6 +37,7 @@ namespace ProjectOne
 
             test_1.property = 12;
             test_1.Print();
+            test_1.Draw();
             Console.WriteLine(test_1.property);
 
             Console.WriteLine();
