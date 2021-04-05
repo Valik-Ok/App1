@@ -1,7 +1,21 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
+//#14
+namespace ProjectOne
+{
+    class MainClass
+    {
+        public static void Main (string[] args)
+        {
+            Console.ReadLine();
+        }
+    }
+}
+
+
 //#13 Структуры ( Уменьшаная копия класов )
+/*
 namespace ProjectOne
 {
     struct Book
@@ -20,6 +34,7 @@ namespace ProjectOne
         }
     }
 }
+*/
 
 //#12 Перечесление (enum)
 /*
