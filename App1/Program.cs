@@ -5,12 +5,12 @@ using System.Collections.Generic; // Масивы: Список
 
 namespace ProjectOne
 {
-    class Animal
+    abstract class Animal // Абстрактный класс
     {
         public string Name { get; set; }
 
         public Animal (string name) { Name = name; Console.WriteLine("Name: " +Name); }
-        public virtual void Print() { Console.WriteLine(Name); } // Виртуальный метод.
+        public abstract void Print(); // Абстрактный метод.
     }
     class Dog : Animal
     {
@@ -24,7 +24,6 @@ namespace ProjectOne
 
         public override void Print()
         {
-            base.Print();
             Console.WriteLine("Dog Speed: " + speed);
         }
     }
@@ -39,7 +38,6 @@ namespace ProjectOne
         }
         public override void Print()
         {
-            base.Print();
             Console.WriteLine("Cat Speed: " +speed);
         }
     }
