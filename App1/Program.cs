@@ -4,10 +4,21 @@ using System.Collections.Generic; // Масивы: Список
 //#11 Перегрузка методов
 namespace ProjectOne
 {
+    class Some
+    {
+        public void Multiply (int a, int b)
+        {
+            Console.WriteLine("Result is: " + a * b);
+        }
+    }
     class Mainclass
     {
         public static void Main (string[]args)
         {
+            Some test = new Some();
+
+            test.Multiply (2, 33);
+
             Console.ReadKey();
         }
     }
