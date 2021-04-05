@@ -1,7 +1,20 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
+//#13 Структуры 
+namespace ProjectOne
+{
+    class MainClass
+    {
+        public static void Main (string[] args)
+        {
+            Console.ReadLine();
+        }
+    }
+}
+
 //#12 Перечесление (enum)
+/*
 namespace ProjectOne
 {
     enum Breed { Dog, Cat, Bird, Bear, Tiger };
@@ -22,6 +35,7 @@ namespace ProjectOne
         }
     }
 }
+*/
 
 //#11 Перегрузка методов
 /*
