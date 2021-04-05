@@ -4,17 +4,18 @@ using System.Collections.Generic; // Масивы: Список
 //#12 Перечесление (enum)
 namespace ProjectOne
 {
+    enum Breed { Dog, Cat, Bird, Bear, Tiger };
     class Animal
     {
-        public string breed;
-        public Animal (string breed) { this.breed = breed; }
+        public Breed breed;
+        public Animal (Breed breed) { this.breed = breed; }
         public void Print () { Console.WriteLine(breed); }
     }
     class Mainclass
     {
         public static void Main (string[] args)
         {
-            Animal Dog = new Animal("Dog");
+            Animal Dog = new Animal(Breed.Dog);
             Dog.Print();
 
             Console.ReadLine();
