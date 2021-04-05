@@ -1,7 +1,20 @@
 ﻿using System;
 using System.Collections.Generic; // Масивы: Список
 
+//#12 Перечесление (enum)
+namespace ProjectOne
+{
+    class Mainclass
+    {
+        public static void Main (string[] args)
+        {
+            Console.ReadLine();
+        }
+    }
+}
+
 //#11 Перегрузка методов
+/*
 namespace ProjectOne
 {
     class Some
@@ -33,6 +46,7 @@ namespace ProjectOne
         }
     }
 }
+*/
 
 //#10 Интерфейсы 
 /*
